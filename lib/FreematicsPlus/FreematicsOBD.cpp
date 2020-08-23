@@ -374,14 +374,14 @@ bool COBD::init(OBD_PROTOCOLS protocol)
 		return true;
 	}
 
-	for (byte n = 0; n < 2; n++) {
-		int value;
-		if (readPID(PID_SPEED, value)) {
-			stage = 3;
-			break;
-		}
-	}
-	if (stage != 3) return false;
+	// for (byte n = 0; n < 2; n++) {
+	// 	int value;
+	// 	if (readPID(PID_SPEED, value)) {
+	// 		stage = 3;
+	// 		break;
+	// 	}
+	// }
+	// if (stage != 3) return false;
 
 	// load pid map
 	memset(pidmap, 0xff, sizeof(pidmap));
