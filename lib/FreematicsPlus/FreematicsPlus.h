@@ -1,3 +1,4 @@
+// clang-format off
 /*************************************************************************
 * Arduino library for ESP32 based Freematics ONE+ and Freematics Esprit
 * Distributed under BSD license

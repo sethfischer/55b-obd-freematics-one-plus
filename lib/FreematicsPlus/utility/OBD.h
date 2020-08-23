@@ -1,3 +1,4 @@
+// clang-format off
 // Mode 1 PIDs
 #define PID_ENGINE_LOAD 0x04
 #define PID_COOLANT_TEMP 0x05

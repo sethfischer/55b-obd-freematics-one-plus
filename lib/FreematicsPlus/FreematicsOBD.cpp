@@ -1,3 +1,4 @@
+// clang-format off
 /*************************************************************************
 * Arduino Library for Freematics ONE+
 * Distributed under BSD license
@@ -469,7 +470,7 @@ void COBD::setHeaderFilter(uint32_t num)
 	sprintf(buf, "ATCF %X\r", num);
 	link->sendCommand(buf, buf, sizeof(buf), 1000);
 }
-	
+
 void COBD::setHeaderMask(uint32_t bitmask)
 {
 	char buf[32];

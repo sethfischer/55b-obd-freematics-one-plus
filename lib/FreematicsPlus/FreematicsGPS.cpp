@@ -1,3 +1,4 @@
+// clang-format off
 /*
 TinyGPS - a small GPS library for Arduino providing basic NMEA parsing
 Based on work by and "distance_to" and "course_to" courtesy of Maarten Lamers.

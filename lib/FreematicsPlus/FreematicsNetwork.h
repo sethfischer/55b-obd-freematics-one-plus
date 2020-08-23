@@ -1,3 +1,4 @@
+// clang-format off
 /*************************************************************************
 * Telematics Data Logger Class
 * Distributed under BSD license

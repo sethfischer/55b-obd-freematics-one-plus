@@ -1,3 +1,4 @@
+// clang-format off
 /*************************************************************************
 * Arduino Library for Freematics ONE/ONE+
 * Distributed under BSD license
@@ -76,4 +77,3 @@ protected:
 	char* getResultValue(char* buf);
 	OBD_STATES m_state = OBD_DISCONNECTED;
 };
-

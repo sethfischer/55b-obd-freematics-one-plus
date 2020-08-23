@@ -1,3 +1,4 @@
+// clang-format off
 /*************************************************************************
 * Base class for Freematics telematics products
 * Distributed under BSD license
