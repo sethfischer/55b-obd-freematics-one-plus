@@ -14,6 +14,7 @@ COBD obd;
 FreematicsESP32 sys;
 
 bool connected = false;
+char vin[18] = {0};
 
 void setup() {
   pinMode(PIN_LED, OUTPUT);
@@ -66,6 +67,16 @@ void loop() {
   DEBUG_TRACE("[INFO] Device voltage: ");
   DEBUG_TRACE(obd.getVoltage());
   DEBUG_TRACE(" V\n");
+
+  char buf[128];
+  if (obd.getVIN(buf, sizeof(buf))) {
+    strncpy(vin, buf, sizeof(vin) - 1);
+    DEBUG_TRACE("VIN: ");
+    DEBUG_TRACE(vin);
+    DEBUG_TRACE("\n");
+  } else {
+    DEBUG_TRACE("[ERROR] Failed to read VIN\n");
+  }
 
   if (obd.errors > 2) {
     DEBUG_TRACE("[WARN] OBD errors. Resetting.\n");
